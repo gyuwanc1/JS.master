@@ -39,3 +39,50 @@ console.log((x >= 70)? '합격' : '불합격');
 var msg = (msg === undefined ? '안녕하세요 자바스크립트' : msg);
 console.log(msg);
 }
+
+{
+  const a =['1','3','2','4','7','5'];
+  console.log(a);
+  console.log(a.pop());
+  console.log(a.sort());
+  console.log(a.pop());
+  console.log(a)
+  console.log(a.shift());
+  console.log(a)
+  console.log(a.unshift('100'));
+  console.log(a);
+  console.log(a.splice(0,3,'1000'))
+  console.log(a);
+  console.log(a.push('3','6','7'));
+  console.log(a);
+  console.log(a.sort());
+  console.log(a.slice(0,2));
+  console.log(a);
+}
+
+{
+let str= '킹 콩';
+console.log(str.length);  
+console.log(str.indexOf('킹'));
+}
+
+{
+let a = '우 리 나 라 좋 은 나 라';
+let part= a.split(' ');
+for(let i = 0; i<part.length;i++){
+console.log(part[i]);
+}
+
+}
+
+
+{
+
+  const myArr = [1, 2, 3, 4, 5];
+
+myArr.forEach((currentElement, index, array) => {
+    console.log(`요소: ${currentElement}`);
+    console.log(`index: ${index}`);
+    console.log(array);
+});
+}
