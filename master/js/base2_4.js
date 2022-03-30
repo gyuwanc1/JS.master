@@ -114,8 +114,21 @@ console.log (1234+today);
   console.log(memo);
 }
 
-//객체분해
+//중첩객체분해
 {
-  
+  let book = { title:'java포켓레퍼런스', publish:'기술평론사', price:26800,other:{keywd:'java se 8', logo:'logo.jpg'}};
+  let{title,other,other:{keywd}} = book;
+
+  console.log(title);
+  console.log(other);
+  console.log(keywd);
 }
 
+//변수별명지정
+{
+  let book = {title: 'java포켓레퍼런스', publish:'기술평론사'};
+  let{title:name, publish:company} = book;
+
+  console.log(name);
+  console.log(company);
+}
