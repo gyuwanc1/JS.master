@@ -132,3 +132,18 @@ console.log (1234+today);
   console.log(name);
   console.log(company);
 }
+
+console.clear();
+//비교연산자
+
+{
+  console.log(1 == true);
+}
+
+{
+  var data1 = ['javascript', 'ajax', 'asp.net'];
+  var data2 = ['javascript', 'ajax', 'asp.net'];
+  console.log(data1 == data2);
+  
+  //false로 등록되는 이유는 참조형은 메모리상의 어드레스가 다르기때문. 
+}
