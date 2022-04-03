@@ -134,7 +134,8 @@ console.log (1234+today);
 }
 
 console.clear();
-//비교연산자
+
+//비교연산자 좌우의 항을 비교하여 true//false로 반환
 
 {
   console.log(1 == true);
@@ -167,4 +168,37 @@ console.clear();
 {
   var x =80;
   console.log((x >=70)? '합격' : '불합격');
+}
+
+//논리 연산자
+
+// && 좌우의 식이 모두 true인경우, ||좌우의 식이 어느쪽이든 true인경우, ! 식이 false인경우
+
+{
+  var x =1;
+  var y =2;
+  console.log( x === 1 && y ===1);
+  console.log( x===1 || y ===1 );
+}
+
+//빈문자열, 숫자0, NaN, null, undefied는 false로 인식
+
+// 단락회로평가->  &&연산자의 경우 좌측이 false 라고 판정된 시점에서 조건식 전부가 false가 되므로 우측식은 판정(실행)되지 않음
+// ||연산자의 경우 좌측식이 true인 경우 조건식 전체가 반드시 true가 되므로 우측식은 실행되지 않는다.
+{ 
+  if(x ===1){console.log('안녕하세요')};
+  x === 1 && console.log('안녕하세요'); //<-- 본래 이와같은 기술방법은 원칙상 피해야한다.
+} //<-- 의미상 같은 뜻 
+
+
+// {
+//   var msg = '';
+//   msg=msg || '안녕하세요 자바스크립트';
+//   console.log(msg); 
+// }
+
+{ var msg;
+  console.log(msg)
+  msg = (msg === undefined ? '안녕하세요 자바스크립트' : msg);
+  console.log(msg)
 }
