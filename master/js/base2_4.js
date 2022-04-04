@@ -202,3 +202,19 @@ console.clear();
   msg = (msg === undefined ? '안녕하세요 자바스크립트' : msg);
   console.log(msg)
 }
+
+console.clear();
+
+//delete연산자
+
+//delete연산자는 성공시에 true, 실패시 false
+{
+  var ary = ['javascript','ajax','asp.net']
+  console.log(delete ary[0]);
+  console.log(ary);
+
+  var obj = {x:1, y:2};
+  console.log(delete obj.x);
+  console.log(obj.x);
+  console.log(obj)
+}
