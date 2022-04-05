@@ -217,4 +217,20 @@ console.clear();
   console.log(delete obj.x);
   console.log(obj.x);
   console.log(obj)
+  var obj2 = { x:obj, y:2};
+  console.log(delete obj2.x);
+  console.log(obj);
+
+  var data1 = 1;
+  console.log(delete data1);
+  console.log(data1);
+
+  data2 = 10;
+  console.log(delete data2);
+  console.log(data2);
+
+  //배열요소를 삭제한 경우 해당하는 요소가 삭제되기만 할 뿐 뒤의 요소가 옮겨지는 것은 아니다.
+  //프로퍼티를 삭제한 경우 해당하는 프로퍼치가 삭제될 뿐 참조객체가 삭제되는 것은 아니다.
+  //명시적으로 선언된 변수를 삭제 할 수 없다.
 }
+
