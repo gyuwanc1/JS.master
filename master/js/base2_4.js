@@ -234,6 +234,7 @@ console.clear();
   //명시적으로 선언된 변수를 삭제 할 수 없다.
 }
 
+<<<<<<< HEAD
 {
   //typeof 연산자
   var num =1;
@@ -253,3 +254,30 @@ console.clear();
 
 }
 
+=======
+console.clear();
+
+//type of 
+
+
+{
+  var num =1;
+  console.log(typeof num);
+
+  var str= '안녕하세요';
+  console.log(typeof str);
+
+  var flag = true
+  console.log(typeof flag);
+
+  var ary= ['JS', 'Ajax', 'asp.net'];
+  console.log(typeof ary);
+
+  var obj = {x:1, y:2};
+  console.log(typeof obj);
+
+  
+}
+
+//배열이나 객체는 어느쪽이든 object로 반환
+>>>>>>> master
