@@ -234,3 +234,22 @@ console.clear();
   //명시적으로 선언된 변수를 삭제 할 수 없다.
 }
 
+{
+  //typeof 연산자
+  var num =1;
+  console.log(typeof num); //결과 number
+
+  var str = '안녕하세요';
+  console.log(typeof str); // 결과 string
+
+  var flag = true;
+  console.log(typeof flag); // 결과 boolean
+
+  var ary = ['JS', 'Ajax', 'asp.net'];
+  console.log(typeof ary); //  결과 object 배열
+
+  var obj= {x:1, y:2};
+  console.log(typeof obj); //결과 object 오브젝트
+
+}
+
