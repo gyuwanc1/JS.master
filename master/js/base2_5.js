@@ -90,3 +90,52 @@ if(조건식){
 //위와같이 제어명령을 내부에서 중첩하여 사용하는 것을 NEST라고 한다.
 
 /* 주의!! 중괄호{...}는 생략 할 수 있지만 버그를 일으키기 쉽기 때문에 {...}꼭 써줄것! */
+
+console.clear();
+
+/* switch 문 */
+
+/*
+switch(식){
+  case 값1:
+    '식 = 값1'인 경우에 실행되는 명령
+  case 값2:
+    '식 = 값2'인 경우에 실행되는 명령
+  ...
+  default:
+    식의 값이 모든 값에 조건상 일치하지 않을 경우에 실행되는 명령
+}
+*/
+
+/* switch문의 순서
+
+1.선두의 식이 우선평가
+2. 1의 값에 일치하는 case실행
+3.일치하는 case가 없을경우 default블록을 호출
+
+*/
+
+{
+  var rank = 'B';
+  switch(rank){
+    case 'A':
+      console.log('A랭크입니다');
+      break
+    
+    case 'B':
+      console.log('B랭크입니다');
+      break
+    
+    case 'C':
+      console.log('C랭크입니다');
+      break
+    
+    default:
+      console.log('아무랭크도 아닙니다');
+      break
+  }
+
+  //break 는 현재의 case으로 부터 빠져나오기 위한 제어명령
+  //switch문은 자동으로 case에서 빠져나오지 못한다. 그래서 break문을 이용해 명시적으로 빠져나와야한다. 
+}
+
