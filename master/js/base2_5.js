@@ -139,3 +139,31 @@ switch(식){
   //switch문은 자동으로 case에서 빠져나오지 못한다. 그래서 break문을 이용해 명시적으로 빠져나와야한다. 
 }
 
+/* 의도한 break생략 */
+
+/* 복수의 case에 break사용*/
+
+{
+  var rank2 = 'B';
+  switch(rank2){
+    case 'A':
+    case 'B':
+    case 'C':
+      console.log('합격');
+      break;
+    case 'D':
+      console.log('불합격')
+      break;
+  }
+}
+
+/* 주의!! switch식과 case값은 '==='연산자로 비교한다 */
+
+{
+  var x ='0';
+  switch(x){
+    case 0 :
+      console.log(0);
+  }
+//<- 실행되지 않는다 그이유는 숫자 0과 문자'0'의 데이터타입이 다르기 때문이다.
+}
