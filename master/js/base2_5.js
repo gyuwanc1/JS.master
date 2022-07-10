@@ -243,3 +243,26 @@ for(var i=1, j=1; i<5; i++, j++){
   console.log('i * j는'+ i * j);
 }
 }
+
+/* for...in */
+
+//지정된 연상 배열(object)의 요소를 추출하여 선두부터 순서대로  처리
+
+/*
+for(가변수 in 연상배열){
+  루프내에서 실행하는 명령
+}
+
+for(var ket in data){
+
+}
+*/
+
+//예제
+
+{
+  var data = {apple:150, orange:100, banana:120}
+  for(var key in data){
+    console.log(key + '=' + data[key]);
+  }
+}
