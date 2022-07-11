@@ -266,3 +266,21 @@ for(var ket in data){
     console.log(key + '=' + data[key]);
   }
 }
+
+/* 배열에서는 for...in을 이용하지 않는다.*/
+
+{
+  var data= ['apple','orange','banana']
+  for(var key in data){
+    console.log(data[key]);
+  }
+}
+
+{
+  var data= ['apple','orange','banana']
+  Array.prototype.hoge = function(){}
+  for (var key in data){
+    console.log(data[key]);
+  }
+  //<- 배열기능의 확장까지 표시하게 된다.
+}
