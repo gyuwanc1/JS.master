@@ -284,3 +284,26 @@ for(var ket in data){
   }
   //<- 배열기능의 확장까지 표시하게 된다.
 }
+
+// !! for...of
+/*
+ES2015에서 추가된 명령, Array,object 반복지/생성자 처리가능
+*/
+
+/*
+for(가변수 of 열거 가능한 객체){
+  루프 태네엇 실행하는 명령
+}
+<- for...in과 거의 비슷
+*/
+
+//예제
+
+{
+  var data=['apple', 'orange', 'banana']
+  Array.prototype.hoge = function(){}
+  for (var value of data){
+    console.log(value);
+  }
+}
+//for...in에서는 index번호가 건네지며, for...of에서는 값을 열거하고있다.
