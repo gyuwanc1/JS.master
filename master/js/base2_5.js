@@ -307,3 +307,30 @@ for(가변수 of 열거 가능한 객체){
   }
 }
 //for...in에서는 index번호가 건네지며, for...of에서는 값을 열거하고있다.
+
+// break/continue 명령
+
+// 루프를 강제적으로 중단하는 것 - break
+
+{
+  var result=0;
+  for(var i = 1; i <= 100; i++){
+    result +=i;
+    if(result > 1000) {break;}
+  }
+  console.log('합겨값이 1000을 넘은것은' + i);
+
+  //결과:합계값이 1000을 넘은 것은 45
+  //break명령은 if명령과 합께 사용하는 것이 일반적  
+}
+
+// 현재의 루프만을 건너뛰고 다음 루프를 계속해서 실행하는 것 continue
+
+{
+  var result2 = 0;
+  for(var i = 1; i < 100; i++){
+    if (i % 2 === 0){continue;}
+    result2 += i;
+  }
+  console.log('합계' + result2);
+}
