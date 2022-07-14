@@ -334,3 +334,32 @@ for(가변수 of 열거 가능한 객체){
   }
   console.log('합계' + result2);
 }
+
+// 중첩된 루프 한번에 빠져나오기
+
+//중첩된 루프안에서 break, continue를 사용할 경우 디폴트가장 안쪽의 루프를 탈출,스킵한다.
+
+//예제
+{
+  for(var i = 1; i < 10; i++){
+    for (var j =1; j <10; j++){
+      var k = i * j
+      if(k > 30){break;}
+      document.write(k+ '&nbsp');
+    }
+    document.write('<br />');
+  }
+}
+
+{
+  kuku:
+  for(var i = 1; i < 10; i++){
+    for (var j =1; j <10; j++){
+      var k = i * j
+      if(k > 30){break kuku;}
+      document.write(k+ '&nbsp');
+    }
+    document.write('<br />');
+  }
+}
+//레이블명을 지정하여 중첩된 루프를 데외하고 나열
