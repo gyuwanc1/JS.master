@@ -363,3 +363,27 @@ for(가변수 of 열거 가능한 객체){
   }
 }
 //레이블명을 지정하여 중첩된 루프를 데외하고 나열
+console.clear();
+
+/* 예외처리 try, catch, finally */
+
+/*
+try {
+  예외가 발생할지 모를 명령
+} catch(예외정보를 취할 변수) {
+  예외가 발생했을 시의 명령
+} finally{
+  예외의 유무에 관계없이 최종적으로 실행되는 명령
+}
+*/
+
+{
+  var i = 1;
+  try{
+    i= i * j; //예외발생
+  } catch (e){
+    console.log(e.message);
+  } finally{
+    console.log('처리가완료되었다');
+  }
+}
