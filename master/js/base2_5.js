@@ -387,3 +387,19 @@ try {
     console.log('처리가완료되었다');
   }
 }
+
+console.clear();
+
+/* JS의 위험한 구문 금지 - strict모드 */
+
+//자바스크립트의 함정을 발견하여 오류로 통지해 주는 구조 - strict모드
+
+{
+  'use strict'; //<-- 이후의 전체 스크립트 strict모드로 해석
+}
+
+{
+  function hoge(){
+    'use strict'; // <-- 함수의 스크립트가 strict모드로 해석 
+  }
+}
