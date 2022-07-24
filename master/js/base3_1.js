@@ -41,3 +41,17 @@ var 변수명 = new 객체명([인수,...])
 }
 
 // 기본형 데이터는 NEW연산자를 사용하지 않는다.
+console.clear();
+
+//문자열 조작하기
+{
+  var str1 = '뜰에 뜰에 뜰에는 닭이 있다';
+console.log(str1.indexOf('뜰')) //결과:0 선두부터 검색
+console.log( str1.lastIndexOf('뜰')) //결과:6 뒤에서 부터 검색
+console.log(str1.indexOf('뜰',3)) //결과:3 4번째부터 오른쪽으로 검색
+console.log(str1.lastIndexOf('에',5)) //결과:6번째 문자부터 왼쪽방향검색
+console.log(str1.indexOf('가든')) //결과:-1 불일치
+console.log(str1.startsWith('뜰'))//결과:true 지정된 문자열로 시작하는가?
+console.log(str1.endsWith('뜰'))//결과:fulse 지정된 문자열로 끝나는가?
+console.log(str1.includes('뜰'))//결과 true 지정된 문자열이 포함하는가?
+}
