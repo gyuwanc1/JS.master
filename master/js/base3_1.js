@@ -55,3 +55,16 @@ console.log(str1.startsWith('뜰'))//결과:true 지정된 문자열로 시작�
 console.log(str1.endsWith('뜰'))//결과:fulse 지정된 문자열로 끝나는가?
 console.log(str1.includes('뜰'))//결과 true 지정된 문자열이 포함하는가?
 }
+
+{
+  var str2 = 'WINGS프로젝트';
+  var str3 = '♧싸서';
+  var str4 = '  wings  ';
+
+  console.log(str2. charAt(4)); //결과:S (5번째 문자를 추출)
+  console.log(str2.slice(5,8)) //결과: 프로젝 (6~8번재 문자 추출)
+  console.log(str2.substring(5,8)) //결과: 프로젝 (6~8번재 문자 추출)
+  console.log(str2.split('S')) // 결과: WING, 프로젝트
+  console.log(str2.concat('유한회사'))//결과: Wings프로젝트 유한회사
+  console.log(str2.repeat(2)) //결과:WINGS프로젝트WINGS프로젝트
+}
