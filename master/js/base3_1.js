@@ -68,3 +68,21 @@ console.log(str1.includes('뜰'))//결과 true 지정된 문자열이 포함하�
   console.log(str2.concat('유한회사'))//결과: Wings프로젝트 유한회사
   console.log(str2.repeat(2)) //결과:WINGS프로젝트WINGS프로젝트
 }
+
+//부분문자열
+
+//(1) 인수 start > 인수end 인경우  : end+1 ~start문자까지 추출 
+//substring
+{
+  var str = 'WINGS프로젝트'
+  console.log(str.substring(8,5)) // 프로젝 (6(5+1)~8번째 문자열 추출)
+  console.log(str.slice(8,5)) //공백
+}
+
+//(2)인수 start/end에 음수 지정  : substring은 무조건0으로 인식하지만 slice는 문자열의 끝에서부터 인식
+
+{
+  var str = 'WINGS프로젝트'
+  console.log(str.substring(5,-2))
+  console.log(str.slice(5,-2))
+}
