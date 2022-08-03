@@ -27,4 +27,28 @@
   console.log(ary1.concat(ary2)); //배열 연결
   console.log(ary1.join('/')); // 배열내의 요소를 /로 연결
   console.log(ary1.slice(1)); //start+1~end
+
+  console.log(ary1.slice(1,2));//takae
+  console.log(ary1.splice(1,2, 'kakeya', 'yamaguchi')) //치환
+  console.log(ary1); // [sato, kakeya, yamaguchi, hio, saito, sato]
+}
+
+//스택
+
+// 스택(stack)이란 나중에 들어간 것이 먼저나오는 구조 또는 먼저넣은것이 나주에 나오는 구조
+// 스택은 push/pop 매소드로 구현
+
+//array_stack
+{
+  var data = [] //변수 data라는 array 생성
+  data.push(1); //변수data라는 array에 1삽입
+  data.push(2); //변수data라는 array에 2삽입
+  data.push(3); //변수data라는 array에 2삽입
+  console.log(data);
+  console.log(data.pop()); //나중에 들어간 3 제거
+  console.log(data);
+  console.log(data.pop()); //2제거
+  console.log(data);
+  console.log(data.pop()); //1제거
+  console.log(data);
 }
