@@ -52,3 +52,18 @@
   console.log(data.pop()); //1제거
   console.log(data);
 }
+
+//큐
+
+//큐(Queue)란 먼저넣은것이 먼저나오는 구조 대기행렬
+//큐는  push/shift로 구현
+
+{
+  var data = []
+  data.push(1);  
+  data.push(2);
+  data.push(3);
+  console.log(data.shift());
+  console.log(data.shift());
+  console.log(data.shift());
+}
