@@ -67,3 +67,17 @@
   console.log(data.shift());
   console.log(data.shift());
 }
+
+//스플라이스
+
+//splice 란 배열의 임의의 부분에 요소를 추가하거나 기존의 요소를 치환, 삭제
+
+{
+  var data = ['sato', 'takae', 'osada', 'hio', 'saitoh'];
+  console.log(data.splice(3,2, 'yamada','suzuki')); //hio,saitoh
+  console.log(data);
+  console.log(data.splice(3,2));
+  console.log(data);
+  console.log(data.splice(1,0, 'tanaka'));
+  console.log(data);
+}
